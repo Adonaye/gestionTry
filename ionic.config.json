@@ -1,0 +1,8 @@
+{
+  "name": "gestionTry",
+  "app_id": "e16ae819",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
