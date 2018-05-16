@@ -14,12 +14,10 @@
     </button>
   </ion-fab>
 
-
   <ion-grid>
     <ion-row>
       <ion-col col-6 *ngFor="let anuncio of anuncios">
-        <ion-card>
-          <!-- <img *ngIf="anuncio.src!=null&&anuncio.src!=undefined" [src]="anuncio.imagenUrl"> -->
+        <ion-card (click)="foo()">
           <ion-img [src]="anuncio.imagenUrl"></ion-img>
           <ion-card-content>
             <ion-card-title>

@@ -23,15 +23,7 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit himenaeos felis, ullamcor
     }
   }
 
-}
-/* 
-class Anuncio {
-  titulo: string;
-  imagenUrl?: string;
-  contenido?: string;
-
-  constructor() {
-
+  foo() {
+    
   }
 }
- */
