@@ -9,7 +9,7 @@
 
 <ion-content>
   <ion-fab right bottom>
-    <button ion-fab>
+    <button ion-fab (click)="agregarAnuncio()">
       <ion-icon name="add"></ion-icon>
     </button>
   </ion-fab>
@@ -17,8 +17,8 @@
   <ion-grid>
     <ion-row>
       <ion-col col-6 *ngFor="let anuncio of anuncios">
-        <ion-card (click)="foo()">
-          <ion-img [src]="anuncio.imagenUrl"></ion-img>
+        <ion-card [style]="anuncio.style" (click)="foo()">
+          <img [src]="anuncio.imagenUrl" (load)="img" />
           <ion-card-content>
             <ion-card-title>
               {{anuncio.titulo}}
